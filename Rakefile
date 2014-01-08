@@ -2,6 +2,9 @@ require "bundler/gem_tasks"
 require "rake/testtask"
 require "yard"
 
+desc "Default task runs all the tests."
+task :default => [:test]
+
 # Configure standard test task
 Rake::TestTask.new do |t|
   t.test_files = FileList.new(File.join("test", "**", "*_spec.rb"))

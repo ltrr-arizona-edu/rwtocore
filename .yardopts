@@ -1,0 +1,5 @@
+--main README.md
+--output-dir doc/html
+--title "Rwtocore Documentation"
+lib/**/*.rb -
+README.md LICENSE.txt
