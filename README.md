@@ -1,5 +1,7 @@
 # Rwtocore: Convert Tree-Ring Measurements to Drawings of Cores
 
+[![Build Status](https://travis-ci.org/ltrr-arizona-edu/rwtocore.png?branch=master)](https://travis-ci.org/ltrr-arizona-edu/rwtocore)
+
 ## Background
 
 Much effort has been spent in recording the widths of the growth rings that many trees form each year. Dendrochronology, the science of tree-ring dating, makes extensive use of time series of such measurements, where the width is can be assigned to the year in which the ring formed, and although it also other parameters (such as wood density measurements), series of ring widths are still the most common. Occasionally it would be useful to reverse the process of measurement and turn a series of ring widths into a drawing of the growth rings that produced them. Time series graphs are much better than such drawings for interpreting the measurements, and the stylized bar graphs known as skeleton plots are better for dating, but sometimes for training or display purposes a more literal drawing is useful, particularly if images of the original rings are not to hand, or there are confounding factors that mask the clarity of the growth pattern.
@@ -33,10 +35,10 @@ A simple command-line application `rwtocore` handles the common case of reading 
 
 In practice, since the SVG output appears on Standard Output rather than in a file, this will almost always follow the pattern
 
-    rwtocore width_file.rw > drawing.svg_
+    rwtocore width_file.rw > drawing.svg
 
 The `maxlength` option selects the displayable sub series, and if omitted it will draw the full length of each series.
 
 ## Code
 
-The code for Rwtocore follows the usual layout for a gem with Bundler managing any dependencies on other gems. The only important dependency is on Builder, which generates the SVG output directly (no graphics gems or libraries are involved). The tests use the spec-like interface to Minitest, and the non-trivial tests need Nokogiri to parse the SVG output. The generic instructions for including it in your own code apply as a gem apply.
+The code for Rwtocore follows the usual layout for a gem with Bundler managing any dependencies on other gems. The only important dependency is on Builder, which generates the SVG output directly (no graphics gems or libraries are involved). The tests use the spec-like interface to Minitest, and the non-trivial tests need Nokogiri to parse the SVG output. The generic instructions for including it in your own code apply as a gem apply. The automatically generated documentation is at http://rubydoc.info/github/ltrr-arizona-edu/rwtocore
