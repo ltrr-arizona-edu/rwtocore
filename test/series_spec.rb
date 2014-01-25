@@ -3,14 +3,6 @@
 
 require 'bundler/setup'
 
-unless Kernel.respond_to?(:require_relative)
-  module Kernel
-    def require_relative(string)
-      require File.join(File.dirname(caller.first), string)
-    end
-  end
-end
-
 require_relative "helper"
 require_relative "../lib/rwtocore/messenger"
 

@@ -3,15 +3,6 @@
 
 require 'bundler/setup'
 
-# Attempt to be backwards-compatible with Ruby 1.8 (probably futile).
-unless Kernel.respond_to?(:require_relative)
-  module Kernel
-    def require_relative(string)
-      require File.join(File.dirname(caller.first), string)
-    end
-  end
-end
-
 require_relative '../lib/rwtocore'
 
 # @see Rwtocore::CLI (defines the command-line interface)

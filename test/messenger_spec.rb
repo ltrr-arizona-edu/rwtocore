@@ -5,14 +5,6 @@ gem "minitest"
 require "minitest/autorun"
 require "stringio"
 
-unless Kernel.respond_to?(:require_relative)
-  module Kernel
-    def require_relative(string)
-      require File.join(File.dirname(caller.first), string)
-    end
-  end
-end
-
 require_relative "../lib/rwtocore/messenger.rb"
 include Rwtocore
 
