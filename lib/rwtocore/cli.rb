@@ -57,7 +57,7 @@ module Rwtocore
     def run
       slist = []
       @filelist.each do |fname|
-        err = Logger.new(fname, @errs)
+        err = Messenger.new(fname, @errs)
         begin
           File.open(fname) do |infile|
             series = case
