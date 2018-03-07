@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "nokogiri", "~> 1.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "redcarpet", "~> 2.0"
-  spec.add_development_dependency "yard", "~> 0.8"
+  spec.add_development_dependency "yard", "~> 0.9.11"
 end

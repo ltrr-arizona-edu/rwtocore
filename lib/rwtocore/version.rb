@@ -4,5 +4,5 @@
 # and generate the graphical representation of the simulated cores.
 module Rwtocore
   # Version number for the entire module (following the usual major.minor.patch conventions).
-  VERSION = "0.0.1"
+  VERSION = "0.0.2"
 end
