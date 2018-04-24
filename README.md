@@ -12,7 +12,7 @@ A core is a common type of tree-ring sample; simple sampling devices, increment 
 
 ### Measurements
 
-Rwtocore reads measurements from text files in a format produced by obsolete measuring software, RW format. This is essentially just a column of numbers in ASCII text with almost now metadata at the start of the file. Some measurements from old equipment may be in this format, but almost any more sophisticated format can be downgraded to RW; the cross-platform conversion program TRiDAS is the recommended way to do this. Rwtocore can display multiple series of measurements together, conceptually on the same page.
+Rwtocore reads measurements from text files in a format produced by obsolete measuring software, RW format. This is essentially just a column of numbers in ASCII text with almost now metadata at the start of the file. Some measurements from old equipment may be in this format, but almost any more sophisticated format can be downgraded to RW; the cross-platform conversion program [TRiCYCLE](http://tridas.org/software.php) is the recommended way to do this. Rwtocore can display multiple series of measurements together, conceptually on the same page.
 
 ### Drawings
 
@@ -27,7 +27,7 @@ Rwtocore normally draws all the rings in a series, but if there are many rings t
 A simple command-line application `rwtocore` handles the common case of reading series of ring-width measurements from one or more files and writing the drawings in SVG format. The built-in help displays:
 
     Usage: rwtocore [options] rwfile [rwfile ...]
-    
+
     Options:
         -m, --maxlength RINGS  Maximum number of rings; if positive, count from the start, if negative, count from the end
         -v, --version          Show version
